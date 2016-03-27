@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Predictive Search</title>
+	<link rel="stylesheet" href="bonus_one.css">
+</head>
+<body>
+	<h1 class="h1">Predictive Search</h1>
+
+	<div class="flexsearch">
+		<div class="flexsearch-wrapper">
+			<!-- You'll handle the form with js, so no need for method and action -->
+			<form class="flexsearch-form" id="mainForm">
+				<div class="flexsearch-input-wrapper">
+					<p>Refine your search - defaults to all</p>
+					Interests
+					<input id = "interests" type="checkbox" name="interests" value="Interests">
+					Programming
+					<input id = "programming" type="checkbox" name="programming" value="Programming">
+					<input id = "search" class="flexsearch-input" type="search" placeholder="search">
+					<ul id = "search-list" class = "nav"></ul>
+				</div>
+				<input class="flexsearch-submit" type="submit" value="&#10140;" onclick = "get_search(); event.preventDefault();"/>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="bonus_one.js"></script>
+</body>
+</html>
